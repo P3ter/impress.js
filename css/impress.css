@@ -35,9 +35,13 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+
 ol, ul {
-    list-style: none;
+    margin-left: 24px;
+    line-height: 56px;
+    /*list-style: none;*/
 }
+
 blockquote, q {
     quotes: none;
 }
@@ -63,13 +67,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     min-height: 740px;
     
+    /*
     background: rgb(215, 215, 215);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));    
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    */
 }
 
 /*
@@ -169,7 +175,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -265,18 +271,20 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 
-#slide2 {
-    width: 600px;
+.slideimage {
+    width: auto;
     text-align: center;
-    font-size: 40px;
-    line-height: 1;
+    padding:10px;
+}
+
+.slidetexte {
 }
 
 /*
     'Tiny ideas' just need some tiny styling.
 */
-#tiny {
-    width: 800px;
+.tiny {
+    width: 840px;
     text-align: center;
     font-size: 60px;
 }
